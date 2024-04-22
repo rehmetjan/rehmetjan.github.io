@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Rehmetjan</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- main content -->
+    <div class="container">
+        <h1>Welcome to my personal homepage</h1>
+        <p>My name is Rehmetjan Tursun. I am a software engineer and I am passionate about programming.</p>
+        <p>Here are some of the programming languages I am familiar with:</p>
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>HTML/CSS</li>
+        </ul>
+        <p>Here are some of the frameworks I have worked with:</p>
+        <ul>
+            <li>Spring Boot</li>
+            <li>Django</li>
+            <li>React</li>
+            <li>Angular</li>
+            <li>Bootstrap</li>
+        </ul>
+        <p>Here are some of the databases I have worked with:</p>
+        <ul>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>SQLite</li>
+            <li>Redis</li>
+        </ul>
+        <p>Here are some of the cloud services I have worked with:</p>
+        <ul>
+            <li>AWS</li>
+            <li>Google Cloud</li>
+            <li>Azure</li>
+            <li>Heroku</li>
+            <li>Netlify</li>
+        </ul>
+        <p>Here are some of the tools I have worked with:</p>
+        <ul>
+            <li>Git</li>
+            <li>Jenkins</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Ansible</li>
+        </ul>
+        <p>Here are some of the programming problems I have solved:</p>
+        <ul>
+            <li>LeetCode TwoSum</li>
+            <li>LeetCode AddTwoNumbers</li>
+            <li>LeetCode LongestSubstringWithoutRepeatingCharacters</li>
+            <li>LeetCode MedianOfTwoSortedArrays</li>
+            <li>LeetCode LongestPalindromicSubstring</li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- copyright in the footer -->
+            <p class="copyright"></p>            
+        </div>
+    </footer>
+    <!-- JavaScript for LeetCode TwoSum problem -->
+    <script>
+        // i want to show current year in the footer
+        document.querySelector('footer p').innerHTML += '&copy; ' + new Date().getFullYear() + ' Rehmetjan Tursun. All rights reserved.';
+
+        var twoSum = function(nums, target) {
+            let map = new Map();
+            for (let i = 0; i < nums.length; i++) {
+                let complement = target - nums[i];
+                if (map.has(complement)) {
+                    return [map.get(complement), i];
+                }
+                map.set(nums[i], i);
+            }
+        };
+    </script>
+</body>
+</html>
