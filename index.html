@@ -6,6 +6,8 @@
     <title>Personal Homepage</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -24,9 +26,29 @@
     </nav>
 
     <!-- main content -->
-    <div class="container">
+    <div class="container" style="margin-bottom: 90px;">
         <h1>Welcome to my personal homepage</h1>
         <p>My name is Rehmetjan Tursun. I am a software engineer and I am passionate about programming.</p>
+        <p>I have experience in developing web applications, mobile applications, and cloud services.</p>
+        <h2>Software Engineer</h2>
+        <p>
+            10+ years of experience in software development, with a focus on front-end and back-end technologies.
+            Experienced with modern web frameworks, databases, and top programming languages.
+            Also experienced with big data analysis, distributed cloud computing, and cloud storage.
+            Able to use open-source technology to create and manage big data centers and virtual cloud computing environments.
+            Aware of how cloud computing technologies like ECS/RDS/OSS were made and are running on production.
+        </p>
+        
+        <h2>Skills:</h2>
+        <p>
+            Front-end development: HTML, CSS, JavaScript, React.js, Angular.js, Vue.js
+            Back-end development: Java, Python, Go, Ruby, PHP
+            Databases: MySQL, PostgreSQL, MongoDB, Oracle, SQL Server
+            Big data analysis: Hadoop, Spark, Hive, HBase, Cassandra
+            Distributed cloud computing: Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), DigitalOcean, Rackspace
+            Cloud storage: Amazon S3, Microsoft Azure Blob Storage, Google Cloud Storage, Dropbox, Box
+        </p>
+        <h2>Experience:</h2>
         <p>Here are some of the programming languages I am familiar with:</p>
         <ul>
             <li>Java</li>
@@ -67,37 +89,17 @@
             <li>Kubernetes</li>
             <li>Ansible</li>
         </ul>
-        <p>Here are some of the programming problems I have solved:</p>
-        <ul>
-            <li>LeetCode TwoSum</li>
-            <li>LeetCode AddTwoNumbers</li>
-            <li>LeetCode LongestSubstringWithoutRepeatingCharacters</li>
-            <li>LeetCode MedianOfTwoSortedArrays</li>
-            <li>LeetCode LongestPalindromicSubstring</li>
-        </ul>
+        
     </div>
 
     <footer class="footer">
         <div class="container">
-            <!-- copyright in the footer -->
-            <p class="copyright"></p>            
+<!-- copyright in the footer -->
+<p class="copyright"></p>       
         </div>
+                 
     </footer>
-    <!-- JavaScript for LeetCode TwoSum problem -->
-    <script>
-        // i want to show current year in the footer
-        document.querySelector('footer p').innerHTML += '&copy; ' + new Date().getFullYear() + ' Rehmetjan Tursun. All rights reserved.';
+    <script src="main.js"></script>
 
-        var twoSum = function(nums, target) {
-            let map = new Map();
-            for (let i = 0; i < nums.length; i++) {
-                let complement = target - nums[i];
-                if (map.has(complement)) {
-                    return [map.get(complement), i];
-                }
-                map.set(nums[i], i);
-            }
-        };
-    </script>
 </body>
 </html>
