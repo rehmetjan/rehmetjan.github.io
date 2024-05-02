@@ -10,6 +10,3 @@ var twoSum = function(nums, target) {
         }
     }
 };
-
-// which git does vs-code using
-// a: git --version
