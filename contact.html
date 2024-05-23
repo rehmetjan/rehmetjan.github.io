@@ -1,74 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rehmetjan Tursun - Contact</title>
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="/">RT</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/index.html">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
-    <!-- main content -->
-    <div class="container">
-      <h1>Contact me</h1>
-      <p>Email: rehmetjan.tursun@gmail.com</p>
-      <!-- email link -->
-      <a href="mailto:rehmetjan.tursun@gmail.com">Send me an email</a>
-      <p>Phone: +86 136 8996 5581</p>
-      <!-- LinkedIn -->
-      <h2>Social</h2>
-      <ul>
-        <li>Twitter: <a href="https://x.com/rehmet">@rehmet</a></li>
-        <li>
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/rehmet" target="_blank"
-            >https://www.linkedin.com/in/rehmet</a
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rehmetjan Tursun - Contact</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">RT</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Home</a>
         </li>
-        <!-- github -->
-        <li>
-          GitHub:
-          <a href="https://github.com/rehmetjan" target="_blank"
-            >https://github.com/rehmetjan</a
-          >
+        <li class="nav-item active">
+          <a class="nav-link" href="/contact.html">Contact</a>
         </li>
       </ul>
-
-      <script src="https://www.paypal.com/sdk/js?client-id=BAAtMLcpO0iFMO3GEiBnofnjfEB7R9842vFPoW7xmIooOIZqb1qA4Dym77oK1J450t0r9oX098oqy6MCjU&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
-      <div id="paypal-container-CYAPFEAHMWC2J"></div>
-      <script>
-        paypal
-          .HostedButtons({
-            hostedButtonId: 'CYAPFEAHMWC2J',
-          })
-          .render('#paypal-container-CYAPFEAHMWC2J')
-      </script>
     </div>
+  </nav>
 
-    <footer class="footer">
-      <!-- copyright in the footer -->
-      <p class="copyright"></p>
-    </footer>
-    <!-- JavaScript for LeetCode TwoSum problem -->
-    <script src="main.js"></script>
-  </body>
+  <!-- main content -->
+  <div class="container">
+    <!-- breadcrumb start-->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="/index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+      </ol>
+    </nav>
+    <!-- breadcrumb end -->
+    <h1>Contact me</h1>
+    <p>Email: rehmetjan.tursun@gmail.com</p>
+    <!-- email link -->
+    <a href="mailto:rehmetjan.tursun@gmail.com">Send me an email</a>
+    <p>Phone: +86 136 8996 5581</p>
+    <!-- LinkedIn -->
+    <h2>Social</h2>
+    <ul>
+      <li>Facebook: <a href="https://www.facebook.com/rehmetjan">Rehmetjan</a></li>
+      <li>Twitter: <a href="https://x.com/rehmet">@rehmet</a></li>
+      <li>LinkedIn:<a href="https://www.linkedin.com/in/rehmet">https://www.linkedin.com/in/rehmet</a></li>
+      <!-- github -->
+      <li>
+        GitHub:
+        <a href="https://github.com/rehmetjan">https://github.com/rehmetjan</a>
+      </li>
+    </ul>
+
+    <script
+      src="https://www.paypal.com/sdk/js?client-id=BAAtMLcpO0iFMO3GEiBnofnjfEB7R9842vFPoW7xmIooOIZqb1qA4Dym77oK1J450t0r9oX098oqy6MCjU&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+    <div id="paypal-container-CYAPFEAHMWC2J"></div>
+    <script>
+      paypal
+        .HostedButtons({
+          hostedButtonId: 'CYAPFEAHMWC2J',
+        })
+        .render('#paypal-container-CYAPFEAHMWC2J')
+    </script>
+  </div>
+
+  <footer class="footer">
+    <!-- copyright in the footer -->
+    <p class="copyright"></p>
+  </footer>
+  <!-- JavaScript for LeetCode TwoSum problem -->
+  <script src="main.js"></script>
+</body>
+
 </html>
